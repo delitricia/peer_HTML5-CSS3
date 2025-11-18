@@ -1,6 +1,6 @@
 *{
     font-size: 32px;
-    font-family: Barlow;
+    font-family: barlow;
     font-weight: bold;
     text-align: center;
     color:#de2f2f;
@@ -11,7 +11,7 @@
     justify-content: space-between;
     border: 8px solid black;
     padding: 20px;
-    gap: 10px;
+    gap: 30px;
 }
 .logo{
     background-color: #f5cf67;
@@ -22,7 +22,6 @@
     background-color: #f5cf67;
     padding: 10px;
     flex:2;
-
 }
 .registro{
     background-color: #f5cf67;
@@ -41,17 +40,42 @@
     background-color: #f5cf67;
     flex:1;
 }
-.articulos_comentarios {
+.contenido {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
+}
+.articulos_comentarios {
     border: 8px solid black;
     padding: 30px;
     gap: 10px;
     background-color: #2a7f87;
     grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+.articulos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.articulo{
+    background-color: #f5cf67;
+    width:100%;
+    margin: 0px;
+}
+.comentario{
+    background-color: #f5cf67;
 }
 .opciones {
     grid-column: 2 / 3;
+    background-color: #de2f2f;
+    justify-content: space-between;
+    border: 8px solid black;
+    padding: 30px;
+    gap: 10px;
+}
+.opcion{
+   background-color: #f5cf67;
 }
 
 .contacto{
